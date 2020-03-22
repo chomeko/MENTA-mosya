@@ -10,4 +10,131 @@ html(lang="ja")
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/style.css")
   body
-    h1 テスト
+    header.header
+      .header__container
+        .header__wrapper
+          nav.header__nav
+            ul.header__list
+              li.header__list__itm
+                a(href="#") ABOUT
+              li.header__list__itm
+                a(href="#") SYSTEM
+              li.header__list__itm
+                a(href="#") MENU
+              li.header__list__itm
+                a(href="#") SHOP
+              li.header__list__itm
+                a(href="#") CONTACT
+          h1.header__logo ロゴ
+    main
+      section.mainvisual
+        .mainvisual__container
+          .mainvisual__wrapper
+            img.mainvisual__img(src="", alt="")
+            .mainvisual__content
+              h2.mainvisual__logo toco toco
+              .mainvisual__logo__text
+              | Trimming Salon<br>
+              | 1F, No.2 shinmei Bldg. 3-6-7, Kinjo,<br>
+              | Kita-ku Nagoya-shi,<br>
+              | Aichi, 462-0847, Japan
+            p.mainvisual__text IMAGE PHOTO,
+            .mainvisual__btn
+
+      section.about
+        .about__container
+          .about__wrapper
+            h2.about__title ABOUT
+              span.title--line
+              span.about__title--text 私たちの思い
+            .about__side CONTENT 01
+            p.about__text2
+            |「ワンちゃん」のことをとことん考えた、<br>
+            |「ワンちゃん」に優しい、<br>
+            | ストレスケアをしっかり考えたお店。
+            .btn
+              a(href="#") READ MORE
+
+      section.menu
+        .menu__container
+          .menu__system__wrapper
+            img(src="", alt="").menu__system__img
+            h2.menu__system__title SYSTEM
+              span.title--line
+              span.menu__title--text 施術の流れをご紹介
+            .btn
+              a(href="#")
+          .menu__menu__wrapper
+            img(src="", alt="").menu__menu__img
+            h2.menu__system__title SYSTEM
+              span.title--line
+              span.menu__title--text オススメのメニューをご紹介
+            .btn
+              a(href="#")
+
+      section.photo
+        .photo__container
+          .photo__wrapper
+            h2.photo__title PHOTO
+              span.title--line
+            //カルーセル処理
+
+      section.shop
+        .shop__container
+          .shop__wrapper
+            h2.shop__title SHOP
+              span.title--line
+            table.shop__table
+              tr
+                th
+                  | 店舗名
+                td
+                  | tocotoco（トコトコ）
+              tr
+                th
+                  | 住所
+                td
+                  | 〒462-0847<br>
+                  | 愛知県名古屋市北区金城３丁目６-７ 第２新明ビル1F<br>
+                  a(href="") Google mapを見る
+              tr
+                th
+                  | 開店時間
+                td
+                  | 10:00 〜 19:00
+              tr
+                th
+                  | 定休日
+                td
+                  | 火、木曜日
+              tr
+                th
+                  | 駐輪場
+                td
+                  |「三井のリパーク金城３丁目」に入って26番、32番がtocotocoの<br>
+                  | 駐車場です。
+              tr
+                th
+                  | 動物取扱業登録番号
+                td
+                  | 保管：第300686号<br>
+                  | 登録年月日：H30.5.23<br>
+                  | 有効期限：H35.5.22<br>
+                  | 取扱責任者：平岡愛<br>
+      section.contact
+        .contact__container
+          .contact__wrapper
+            p.contact__text ご予約の方は、下記電話番号からご連絡ください。
+            a.contact__btn(href="")
+              .contact__btn__text TEL 052 908 1777
+            p.contact__text 予約受付時間 10:00 〜 19:00
+    footer.footer
+      .footer__wrapper
+        .footer__logo
+        p.footer__text
+          | 1F, No.2 shinmei Bldg. 3-6-7, Kinjo,<br>
+          | Kita-ku Nagoya-shi,<br>
+          | Aichi, 462-0847, Japan<br>
+        small ©tocotoco trimming salon
+
+
