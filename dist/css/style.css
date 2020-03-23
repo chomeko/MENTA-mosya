@@ -55,6 +55,55 @@ input, select, textarea {
   outline: none;
 }
 
+/* footer */
+.footer {
+  background: #FFF;
+  position: relative;
+  width: 100%;
+}
+
+.footer__container {
+  align-items: center;
+  display: flex;
+  height: 29rem;
+}
+
+.footer__logo {
+  background-image: url("../img/スクリーンショット 2020-03-23 21.33.57.png");
+  height: 15rem;
+  margin-left: 6rem;
+  width: 15rem;
+}
+
+.footer__contents {
+  font-family: "Sorts Mill Goudy", serif;
+  margin-left: 15rem;
+}
+
+.footer__text {
+  font-size: 1rem;
+  letter-spacing: .2em;
+  line-height: 2rem;
+  margin-bottom: 7rem;
+}
+
+.footer__copyrite {
+  font-size: 1rem;
+  letter-spacing: .2em;
+  line-height: 2rem;
+}
+
+.top__btn {
+  background-image: url(../img/footer_icon_arrow_01.png);
+  bottom: 25%;
+  color: #937218;
+  content: '';
+  height: 5.5rem;
+  position: absolute;
+  right: 8rem;
+  width: 5.5rem;
+}
+
 /* header */
 .header {
   height: 100%;
