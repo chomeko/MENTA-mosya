@@ -3,9 +3,15 @@
   max-width: $inner
   margin: auto
 
-//button
+//トップに戻るbutton
 =topbtn
   background-image: url(../img/footer_icon_arrow_01.png)
+  width: 5.5rem
+  height: 5.5rem
+  color: $font-color
+//mvのボタンでaboutに移動する
+=mvbtn
+  background-image: url(../img/mv_icon_arrow_01.png)
   width: 5.5rem
   height: 5.5rem
   color: $font-color
@@ -29,6 +35,12 @@ $bg-color: #f1f1f1
 
 $font: "\\6E38明朝体", YuMincho, "\\6E38明朝", "Yu Mincho", "\\30D2ラギノ明朝ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "\\30D2ラギノ明朝ProN", "Hiragino Mincho ProN", "\\30D2ラギノ明朝Pro", "Hiragino Mincho Pro", "HGS明朝 E", "ＭＳ Ｐ明朝", "MS PMincho", serif
 $font_en: 'Sorts Mill Goudy', serif
+
+.fadein
+  opacity: 1
+  transition: 3s ease-in-out
+  -webkit-transition: 3s ease-in-out
+
 
 a
   color: $font-color

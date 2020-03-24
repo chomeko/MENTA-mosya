@@ -9,6 +9,7 @@ html(lang="ja")
     meta(name="keywords" content="模写、コーディング, HTML")
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css")
     link(href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet")
   body
     header.header
@@ -29,23 +30,31 @@ html(lang="ja")
     main
       section.mainvisual
         .mainvisual__container
-          //ここもカルーセル
-          img.mainvisual__img(src="", alt="")
+          .swiper__container
+            .swiper-wrapper
+              .swiper-slide
+                img.swiper-slide__img(src="../img/mv_img_01.png" alt="Swiper01")
+                .swiper-slide-content.swiper-slide-content-1
+                  span IMAGE PHOTO,TRIMMING
+              .swiper-slide
+                img.swiper-slide__img(src="../img/mv_img_02.png" alt="Swiper02")
+                .swiper-slide-content.swiper-slide-content-2
+                  span IMAGE PHOTO,ENTRANCE
+              .swiper-slide
+                img.swiper-slide__img(src="../img/mv_img_03.png" alt="Swiper03")
+                .swiper-slide-content.swiper-slide-content-3
+                  span IMAGE PHOTO,INTERIOR
           .mainvisual__contents
-            //logo画像
             h2.mainvisual__logo
             .mainvisual__logo__text
-              | Trimming Salon<br>
               | 1F, No.2 shinmei Bldg. 3-6-7, Kinjo,<br>
               | Kita-ku Nagoya-shi,<br>
               | Aichi, 462-0847, Japan
-          .mainvisual__img__contents
-            span IMAGE PHOTO,
-            span title
-            .mainvisual__line
-              span 1
-              span.line
-              span 0
+          //.mainvisual__img__contents
+          .mainvisual__line
+            span.mainvisual__line--min 1
+            .swiper-pagination
+            span.mainvisual__line--max 3
           //btn画像
           a(href="#").mainvisual__btn
 
@@ -144,5 +153,8 @@ html(lang="ja")
           .footer__copyrite
             small ©tocotoco trimming salon
         a(href="").top__btn
-
+  <!-- script置き場 -->
+  script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js")
+  script(src="js/swiper.min.js")
 

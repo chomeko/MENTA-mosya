@@ -1,0 +1,92 @@
+/* mainvisual */
+.mainvisual
+  position: relative
+  width: 100%
+  &__container
+    height: 100%
+  &__imges
+    right: 25rem
+    width: calc(100vw - 250px)
+    height: 59rem
+    object-fit: cover
+    border-radius: 3rem
+  &__contents
+    position: absolute
+    top: 45%
+    right: 6rem
+    transform: translateY(-45%)
+    width: 35rem
+  &__logo
+    background-image: url("../img/mv_logo_01.png")
+    background-size: cover
+    width: 31rem
+    height: 8rem
+    margin: auto
+    margin-bottom: 3rem
+    &__text
+      font-family: $font_en
+      font-size: 1rem
+      letter-spacing: .2em
+      line-height: 2rem
+      text-align: center
+  &__line
+    position: absolute
+    bottom: .2rem
+    right: 0
+    margin-right: 25rem
+    display: flex
+    align-items: center
+    font-size: 1rem
+    line-height: 1rem
+    letter-spacing: .2em
+    font-family: $font_en
+    &--min
+      font-size: 1.4rem
+      margin-right: 2rem
+    &--line
+      content: ''
+      border-bottom: 1px solid
+      width: 6rem
+      height: rem
+    &--max
+      font-size: 1.4rem
+      margin-left: 9rem
+  &__btn
+    position: absolute
+    content: ''
+    bottom: 5rem
+    right: 8rem
+    +mvbtn
+.swiper-container
+  .swiper-slide
+    width: 100%
+.swiper-wrapper
+  z-index: 0 !important
+.swiper-slide
+  &__img
+    object-fit: cover
+    right: 25rem
+    width: calc(100vw - 250px)
+    height: 59rem
+    border-radius: 3rem
+/* swiper */
+.swiper-pagination
+  margin-left: 3rem
+  display: flex
+.swiper-pagination-bullet
+  width: 2rem !important
+  height: .1rem !important
+  display: inline-block !important
+  opacity: 0.2 !important
+  background: $font-color !important
+  cursor: none !important
+.swiper-pagination-bullet-active
+    opacity: 1 !important
+    background: $font-color !important
+.swiper-slide-content
+  margin-left: 15rem
+  margin-top: 3.5rem
+  font-size: 1rem
+  line-height: 1rem
+  letter-spacing: .2em
+  font-family: $font_en

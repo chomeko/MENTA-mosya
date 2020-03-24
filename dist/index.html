@@ -9,6 +9,7 @@
     <meta name="keywords" content="模写、コーディング, HTML"/>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css"/>
     <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&amp;display=swap" rel="stylesheet"/>
   </head>
   <body>
@@ -29,19 +30,30 @@
     <main>
       <section class="mainvisual">
         <div class="mainvisual__container">
-          <!--ここもカルーセル--><img class="mainvisual__img" src="" alt=""/>
+          <div class="swiper__container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="swiper-slide__img" src="../img/mv_img_01.png" alt="Swiper01"/>
+                <div class="swiper-slide-content swiper-slide-content-1"><span>IMAGE PHOTO,TRIMMING</span></div>
+              </div>
+              <div class="swiper-slide"><img class="swiper-slide__img" src="../img/mv_img_02.png" alt="Swiper02"/>
+                <div class="swiper-slide-content swiper-slide-content-2"><span>IMAGE PHOTO,ENTRANCE</span></div>
+              </div>
+              <div class="swiper-slide"><img class="swiper-slide__img" src="../img/mv_img_03.png" alt="Swiper03"/>
+                <div class="swiper-slide-content swiper-slide-content-3"><span>IMAGE PHOTO,INTERIOR</span></div>
+              </div>
+            </div>
+          </div>
           <div class="mainvisual__contents">
-            <!--logo画像-->
             <h2 class="mainvisual__logo"></h2>
             <div class="mainvisual__logo__text">
-              Trimming Salon<br>
               1F, No.2 shinmei Bldg. 3-6-7, Kinjo,<br>
               Kita-ku Nagoya-shi,<br>
               Aichi, 462-0847, Japan
             </div>
           </div>
-          <div class="mainvisual__img__contents"><span>IMAGE PHOTO,</span><span>title</span>
-            <div class="mainvisual__line"><span>1</span><span class="line"></span><span>0</span></div>
+          <!--.mainvisual__img__contents-->
+          <div class="mainvisual__line"><span class="mainvisual__line--min">1</span>
+            <div class="swiper-pagination"></div><span class="mainvisual__line--max">3</span>
           </div>
           <!--btn画像--><a class="mainvisual__btn" href="#"></a>
         </div>
@@ -135,5 +147,8 @@
         </div><a class="top__btn" href=""></a>
       </div>
     </footer>
-  </body>
+  </body><!-- script置き場 -->
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+  <script src="js/swiper.min.js"></script>
 </html>
