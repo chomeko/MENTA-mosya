@@ -16,12 +16,12 @@
   height: 5.5rem
   color: $font-color
 
-$layout-width-inner: 0000px
+$layout-width-inner: 768px
 /* sp: スマホ */
 /* +sp: スマホ以上でタブレットとpc共通 */
 /* tab: タブレット */
 /* pc: パソコン */
-$breakpoints: ("sp": "screen and (max-width: 767px)","+sp": "screen and (min-width: 768px)","tab": "screen and (min-width: 768px) and (max-width: #{$layout-width-inner - 1px})","pc": "screen and (min-width: #{$layout-width-inner})")
+$breakpoints: ("sp": "screen and (max-width: 767px)","pc": "screen and (min-width: #{$layout-width-inner})")
 // メディアクエリー
 =mq($breakpoint: sp)
   @media #{map-get($breakpoints, $breakpoint)}

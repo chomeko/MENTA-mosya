@@ -7,18 +7,50 @@
     display: flex
     justify-content: space-between
     align-items: center
+    +mq(sp)
+      height: 9rem
+  &__trigger
+    height: 1.8rem
+    width: 2.5rem
+    cursor: pointer
+    margin-left: 2.5rem
+    position: relative//span用
+    +mq(pc)
+      display: none
+    span
+      position: absolute
+      left: 0
+      display: inline-block
+      background: $font-color
+      height: .1rem
+      width: 100%
+      &:nth-of-type(1)
+        top: 0
+      &:nth-of-type(2)
+        top: .8rem
+      &:nth-of-type(3)
+        bottom: 0
   &__nav
-    margin-left: 10rem
+    margin-left: 8rem
     font-size: 1.4rem
     letter-spacing: .15em
     line-height: 1.4rem
     font-family: $font_en
+    +mq(sp)
+      display: none
   &__list
     display: flex
     &__item
       margin-right: 4rem
+      &:last-child
+        margin-right: 0
   &__logo
     background-image: url("../img/スクリーンショット 2020-03-23 21.33.44.png")
     width: 9rem
     height: 9rem
     margin-right: 10rem
+    +mq(sp)
+      height: 5rem
+      width: 5rem
+      background-size: cover
+      margin-right: 3rem
