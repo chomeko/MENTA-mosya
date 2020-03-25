@@ -1,1 +1,73 @@
 /* about */
+.about
+  &__container
+    text-align: center
+  &__title
+    position: relative
+    font-family: $font_en
+    font-size: 4.6rem
+    line-height: 4.6rem
+    letter-spacing: .2em
+    margin-top: 20rem
+    +mq(sp)
+      font-size: 2.6rem
+      line-height: 2.6rem
+      margin-top: 13rem
+    &--line
+      display: block
+      width: 2rem
+      height: 0.1rem
+      background: $font-color
+      margin: auto
+      margin-top: 2.5rem
+      +mq(sp)
+        margin-top: 1.5rem
+    &--text
+      display: block
+      font-size: 1.6rem
+      font-weight: normal
+      margin-top: 2rem
+      letter-spacing: .1em
+      +mq(sp)
+        font-size: 1.1rem
+        line-height: 1.1rem
+  &__side
+    position: absolute
+    top: 0
+    left: 0
+    writing-mode: vertical-rl
+    font-size: 1rem
+    font-family: $font
+    margin-left: 5rem
+    letter-spacing: .2em
+    font-weight: normal
+    height: 9.5rem
+  &__text2
+    font-size: 1.8rem
+    line-height: 4.5rem
+    margin-top: 3rem
+    letter-spacing: .2em
+    +mq(sp)
+      font-size: 1.3rem
+      line-height: 3.3rem
+      margin-top: 5rem
+  .btn
+    position: relative
+    display: inline-block
+    font-size: 1.4rem
+    font-family: $font_en
+    letter-spacing: .2em
+    margin-top: 9rem
+    +mq(sp)
+      font-size: 1.1rem
+      line-height: 1.1rem
+      margin-top: 5rem
+    &::after
+      position: absolute
+      content: ''
+      top: 30%
+      transform: translateY(-30%)
+      right: -6.5rem
+      +btn
+      +mq(sp)
+        right: -4rem

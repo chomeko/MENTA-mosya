@@ -249,6 +249,130 @@ input, select, textarea {
 }
 
 /* about */
+.about__container {
+  text-align: center;
+}
+
+.about__title {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 4.6rem;
+  letter-spacing: .2em;
+  line-height: 4.6rem;
+  margin-top: 20rem;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .about__title {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin-top: 13rem;
+  }
+}
+
+.about__title--line {
+  background: #937218;
+  display: block;
+  height: 0.1rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__title--line {
+    margin-top: 1.5rem;
+  }
+}
+
+.about__title--text {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: .1em;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__title--text {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+  }
+}
+
+.about__side {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  font-family: "\\6E38明朝体", YuMincho, "\\6E38明朝", "Yu Mincho", "\\30D2ラギノ明朝ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "\\30D2ラギノ明朝ProN", "Hiragino Mincho ProN", "\\30D2ラギノ明朝Pro", "Hiragino Mincho Pro", "HGS明朝 E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 1rem;
+  font-weight: normal;
+  height: 9.5rem;
+  left: 0;
+  letter-spacing: .2em;
+  margin-left: 5rem;
+  position: absolute;
+  top: 0;
+  writing-mode: vertical-rl;
+}
+
+.about__text2 {
+  font-size: 1.8rem;
+  letter-spacing: .2em;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__text2 {
+    font-size: 1.3rem;
+    line-height: 3.3rem;
+    margin-top: 5rem;
+  }
+}
+
+.about .btn {
+  display: inline-block;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 1.4rem;
+  letter-spacing: .2em;
+  margin-top: 9rem;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .about .btn {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    margin-top: 5rem;
+  }
+}
+
+.about .btn::after {
+  background-image: url(../img/about_icon_more_01.png);
+  color: #937218;
+  content: '';
+  height: 5.5rem;
+  position: absolute;
+  right: -6.5rem;
+  top: 30%;
+  transform: translateY(-30%);
+  width: 5.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about .btn::after {
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about .btn::after {
+    right: -4rem;
+  }
+}
+
 /* contact */
 /* mainvisual */
 .mainvisual {
@@ -356,19 +480,21 @@ input, select, textarea {
 
 .mainvisual__btn {
   background-image: url(../img/mv_icon_arrow_01.png);
-  bottom: 0;
+  bottom: 3rem;
   color: #937218;
   content: '';
   height: 5.5rem;
   position: absolute;
-  right: 2rem;
+  right: 10rem;
   width: 5.5rem;
 }
 
 @media screen and (max-width: 767px) {
   .mainvisual__btn {
     background-size: cover;
+    bottom: 0;
     height: 3rem;
+    right: 2rem;
     width: 3rem;
   }
 }
