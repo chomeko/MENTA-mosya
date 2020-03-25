@@ -7,26 +7,40 @@
     height: 29rem
     display: flex
     align-items: center
+    +mq(sp)
+      display: inline-block
+      width: 100%
+      height: 100%
   &__logo
     background-image: url("../img/スクリーンショット 2020-03-23 21.33.57.png")
     width: 15rem
     height: 15rem
     margin-left: 6rem
+    +mq(sp)
+      margin: auto
+      margin-top: 8rem
+      margin-bottom: 7rem
   &__contents
     font-family: $font_en
     margin-left: 15rem
+    +mq(sp)
+      margin-left: 3rem
   &__text
     font-size: 1rem
     line-height: 2rem
     letter-spacing: .2em
     margin-bottom: 7rem
+    +mq(sp)
+      margin-bottom: 4rem
   &__copyrite
       font-size: 1rem
       line-height: 2rem
       letter-spacing: .2em
+      +mq(sp)
+        margin-bottom: 3rem
 .top__btn
   position: absolute
   content: ''
-  bottom: 25%
-  right: 8rem
+  bottom: 5%
+  right: 2rem
   +topbtn

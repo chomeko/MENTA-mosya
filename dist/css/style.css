@@ -74,6 +74,14 @@ input, select, textarea {
   height: 29rem;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__container {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .footer__logo {
   background-image: url("../img/スクリーンショット 2020-03-23 21.33.57.png");
   height: 15rem;
@@ -81,9 +89,23 @@ input, select, textarea {
   width: 15rem;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    margin: auto;
+    margin-bottom: 7rem;
+    margin-top: 8rem;
+  }
+}
+
 .footer__contents {
   font-family: "Sorts Mill Goudy", serif;
   margin-left: 15rem;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__contents {
+    margin-left: 3rem;
+  }
 }
 
 .footer__text {
@@ -93,21 +115,41 @@ input, select, textarea {
   margin-bottom: 7rem;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__text {
+    margin-bottom: 4rem;
+  }
+}
+
 .footer__copyrite {
   font-size: 1rem;
   letter-spacing: .2em;
   line-height: 2rem;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__copyrite {
+    margin-bottom: 3rem;
+  }
+}
+
 .top__btn {
   background-image: url(../img/footer_icon_arrow_01.png);
-  bottom: 25%;
+  bottom: 5%;
   color: #937218;
   content: '';
   height: 5.5rem;
   position: absolute;
-  right: 8rem;
+  right: 2rem;
   width: 5.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .top__btn {
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 /* header */
