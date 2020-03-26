@@ -520,9 +520,7 @@ input, select, textarea {
 
 @media screen and (max-width: 767px) {
   .swiper-slide__img {
-    -o-object-fit: center;
     height: 38.5rem;
-    object-fit: center;
     right: 7.7rem;
     width: calc(100vw - 77px);
   }
@@ -575,24 +573,16 @@ input, select, textarea {
 }
 
 /* menu */
-.menu {
-  margin-top: 17rem;
-}
-
-@media screen and (max-width: 767px) {
-  .menu {
-    margin-top: 10rem;
-  }
-}
-
 .menu__container {
   display: flex;
   margin: 0 3rem 0 3rem;
+  margin-top: 17rem;
 }
 
 @media screen and (max-width: 767px) {
   .menu__container {
     display: block;
+    margin-top: 10rem;
   }
 }
 
@@ -749,4 +739,36 @@ input, select, textarea {
 }
 
 /* photo */
+.photo__title {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 4.6rem;
+  letter-spacing: .2em;
+  line-height: 4.6rem;
+  margin-top: 16rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .photo__title {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin-top: 13rem;
+  }
+}
+
+.photo__title .title--line {
+  background: #937218;
+  display: block;
+  height: 0.1rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .photo__title .title--line {
+    margin-top: 1.5rem;
+  }
+}
+
 /* shop */
