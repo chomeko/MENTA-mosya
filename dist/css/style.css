@@ -501,15 +501,15 @@ input, select, textarea {
 }
 
 /* swiper */
-.swiper-container .swiper-slide {
+.swiper-container .swiper-slide, .slider1 .swiper-slide {
   width: 100%;
 }
 
-.swiper-wrapper {
+.swiper-container .swiper-wrapper, .slider1 .swiper-wrapper {
   z-index: 0 !important;
 }
 
-.swiper-slide__img {
+.swiper-container .swiper-slide__img, .slider1 .swiper-slide__img {
   -o-object-fit: cover;
   border-radius: 3rem;
   height: 59rem;
@@ -519,25 +519,25 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-slide__img {
+  .swiper-container .swiper-slide__img, .slider1 .swiper-slide__img {
     height: 38.5rem;
     right: 7.7rem;
     width: calc(100vw - 77px);
   }
 }
 
-.swiper-pagination {
+.swiper-container .swiper-pagination, .slider1 .swiper-pagination {
   display: flex;
   margin-left: 3rem;
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-pagination {
+  .swiper-container .swiper-pagination, .slider1 .swiper-pagination {
     margin-left: 2rem;
   }
 }
 
-.swiper-pagination-bullet {
+.swiper-container .swiper-pagination-bullet, .slider1 .swiper-pagination-bullet {
   background: #937218 !important;
   cursor: none !important;
   display: inline-block !important;
@@ -547,17 +547,17 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-pagination-bullet {
+  .swiper-container .swiper-pagination-bullet, .slider1 .swiper-pagination-bullet {
     width: 1rem !important;
   }
 }
 
-.swiper-pagination-bullet-active {
+.swiper-container .swiper-pagination-bullet-active, .slider1 .swiper-pagination-bullet-active {
   background: #937218 !important;
   opacity: 1 !important;
 }
 
-.swiper-slide-content {
+.swiper-container .swiper-slide-content, .slider1 .swiper-slide-content {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 1rem;
   letter-spacing: .2em;
@@ -567,7 +567,7 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-slide-content {
+  .swiper-container .swiper-slide-content, .slider1 .swiper-slide-content {
     display: none;
   }
 }
