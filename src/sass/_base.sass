@@ -26,15 +26,15 @@
     bottom: 0
     right: 2rem
 //btn
-=btn
-  background-image: url(../img/about_icon_more_01.png)
-  width: 5.5rem
-  height: 5.5rem
-  color: $font-color
+=btn($image,$w,$h)
+  background-image: url($image)
+  width: 5.7rem
+  height: 5.7rem
+  color: $white
   +mq(sp)
-    width: 3rem
-    height: 3rem
-    background-size: contain
+    width: $w
+    height: $h
+    background-size: cover
 
 $layout-width-inner: 768px
 /* sp: スマホ */
@@ -50,6 +50,7 @@ $breakpoints: ("sp": "screen and (max-width: 767px)","pc": "screen and (min-widt
 /* 変数 */
 $font-color: #937218
 $bg-color: #f1f1f1
+$white: #FFF
 
 /* style */
 

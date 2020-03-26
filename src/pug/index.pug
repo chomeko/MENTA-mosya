@@ -76,21 +76,27 @@ html(lang="ja")
 
       section.menu
         .menu__container
-          .menu__system__contents
+          .menu__content
+            img(src="/img/about_menu_img_01.png", alt="道具").menu__content__img
             a(href="#")
-              img(src="", alt="").menu__system__img
-              h2.menu__system__title SYSTEM
-                span.title--line
-                span.menu__title--text 施術の流れをご紹介
-              .menu__side CONTENT 02
+              .menu__content__box
+                .menu__content__items
+                  h2.title SYSTEM
+                  span.title--line
+                  span.title--text 施術の流れをご紹介
+              .menu__content__side CONTENT 02
+              .btn
 
-          .menu__menu__contents
+          .menu__content
+            img(src="/img/about_menu_img_02.png", alt="板").menu__content__img
             a(href="#")
-              img(src="", alt="").menu__menu__img
-              h2.menu__system__title MENU
-                span.title--line
-                span.menu__title--text オススメのメニューをご紹介
-              .menu__side CONTENT 03
+              .menu__content__box
+                .menu__content__items
+                  h2.title MENU
+                  span.title--line
+                  span.title--text オススメのメニューをご紹介
+              .menu__content__side CONTENT 03
+              .btn
 
       section.photo
         .photo__container

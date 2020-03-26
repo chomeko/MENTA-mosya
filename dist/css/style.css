@@ -348,21 +348,21 @@ input, select, textarea {
 }
 
 .about .btn::after {
-  background-image: url(../img/about_icon_more_01.png);
-  color: #937218;
+  background-image: url("../img/about_icon_more_01.png");
+  color: #FFF;
   content: '';
-  height: 5.5rem;
+  height: 5.7rem;
   position: absolute;
   right: -6.5rem;
   top: 30%;
   transform: translateY(-30%);
-  width: 5.5rem;
+  width: 5.7rem;
 }
 
 @media screen and (max-width: 767px) {
   .about .btn::after {
-    background-size: contain;
-    height: 3rem;
+    background-size: cover;
+    height: 2.1rem;
     width: 3rem;
   }
 }
@@ -370,6 +370,7 @@ input, select, textarea {
 @media screen and (max-width: 767px) {
   .about .btn::after {
     right: -4rem;
+    top: 10%;
   }
 }
 
@@ -574,5 +575,178 @@ input, select, textarea {
 }
 
 /* menu */
+.menu {
+  margin-top: 17rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    margin-top: 10rem;
+  }
+}
+
+.menu__container {
+  display: flex;
+  margin: 0 3rem 0 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__container {
+    display: block;
+  }
+}
+
+.menu__content {
+  margin-right: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.menu__content:nth-of-type(2) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content {
+    margin-bottom: 2.3rem;
+  }
+  .menu__content:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu__content__img {
+  -o-object-fit: cover;
+  border-radius: 3rem;
+  height: 38rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content__img {
+    border-radius: 1rem;
+    height: 18.5rem;
+  }
+}
+
+.menu__content__box {
+  font-family: "Sorts Mill Goudy", serif;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content__box {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+}
+
+.menu__content__items {
+  color: #FFF;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.menu__content__items .title {
+  font-size: 4.6rem;
+  letter-spacing: .1em;
+  line-height: 4.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content__items .title {
+    font-size: 2.9rem;
+    line-height: 2.9rem;
+  }
+}
+
+.menu__content__items .title--line {
+  background: #FFF;
+  display: block;
+  height: 0.1rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content__items .title--line {
+    margin-top: 1.5rem;
+  }
+}
+
+.menu__content__items .title--text {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: .1em;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content__items .title--text {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+  }
+}
+
+.menu__content__side {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  color: #FFF;
+  font-family: "\\6E38明朝体", YuMincho, "\\6E38明朝", "Yu Mincho", "\\30D2ラギノ明朝ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "\\30D2ラギノ明朝ProN", "Hiragino Mincho ProN", "\\30D2ラギノ明朝Pro", "Hiragino Mincho Pro", "HGS明朝 E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  height: 9.5rem;
+  letter-spacing: .1em;
+  line-height: 1.2rem;
+  position: absolute;
+  right: 2.4rem;
+  top: 3rem;
+  writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content__side {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+.menu__content .btn {
+  background-image: url("../img/about_menu_icon_01.png");
+  bottom: .4rem;
+  color: #FFF;
+  height: 5.7rem;
+  position: absolute;
+  right: 3rem;
+  width: 5.7rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content .btn {
+    background-size: cover;
+    height: 2.1rem;
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__content .btn {
+    bottom: 1rem;
+    right: 1.7rem;
+  }
+}
+
 /* photo */
 /* shop */
