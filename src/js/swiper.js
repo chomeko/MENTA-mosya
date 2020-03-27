@@ -1,5 +1,5 @@
 $( function() {
-  var swiper = new Swiper('.swiper__container', {
+  var swiper = new Swiper('.slider1', {
     speed: 400,
     autoplay: true,
     loop: true,
