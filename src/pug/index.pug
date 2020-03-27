@@ -103,7 +103,21 @@ html(lang="ja")
           h2.photo__title PHOTO
             span.title--line
           //カルーセル処理
-          .swiper-container
+          .swiper-container.slider2
+            .swiper-wrapper
+              .swiper-slide
+                img.swiper-slide-img(src="../img/photo_img_01.png", alt="机と椅子")
+              .swiper-slide
+                img.swiper-slide-img(src="../img/photo_img_02.png", alt="葉っぱのインテリア")
+              .swiper-slide
+                img.swiper-slide-img(src="../img/photo_img_03.png", alt="机と椅子とインテリア")
+              .swiper-slide
+                img.swiper-slide-img(src="../img/photo_img_04.png", alt="お店内にlogo")
+              .swiper-slide
+                img.swiper-slide-img(src="../img/photo_img_05.png", alt="木のインテリア")
+            .swiper-pagination
+            .swiper-button-prev
+            .swiper-button-next
 
       section.shop
         .shop__container
