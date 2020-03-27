@@ -306,13 +306,20 @@ input, select, textarea {
   font-family: "\\6E38明朝体", YuMincho, "\\6E38明朝", "Yu Mincho", "\\30D2ラギノ明朝ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "\\30D2ラギノ明朝ProN", "Hiragino Mincho ProN", "\\30D2ラギノ明朝Pro", "Hiragino Mincho Pro", "HGS明朝 E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-size: 1rem;
   font-weight: normal;
-  height: 9.5rem;
   left: 0;
   letter-spacing: .2em;
   margin-left: 5rem;
   position: absolute;
   top: 0;
   writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 767px) {
+  .about__side {
+    font-size: 0.8rem;
+    letter-spacing: .1em;
+    margin-left: 2rem;
+  }
 }
 
 .about__text2 {
@@ -335,6 +342,7 @@ input, select, textarea {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 1.4rem;
   letter-spacing: .2em;
+  margin-right: 3rem;
   margin-top: 9rem;
   position: relative;
 }
@@ -616,7 +624,7 @@ input, select, textarea {
 @media screen and (max-width: 767px) {
   .menu__content__img {
     border-radius: 1rem;
-    height: 18.5rem;
+    height: 18.8rem;
   }
 }
 
