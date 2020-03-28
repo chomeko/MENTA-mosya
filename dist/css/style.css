@@ -135,12 +135,12 @@ input, select, textarea {
 
 .top__btn {
   background-image: url(../img/footer_icon_arrow_01.png);
-  bottom: 5%;
+  bottom: 30%;
   color: #937218;
   content: '';
   height: 5.5rem;
   position: absolute;
-  right: 2rem;
+  right: 5rem;
   width: 5.5rem;
 }
 
@@ -149,6 +149,13 @@ input, select, textarea {
     background-size: cover;
     height: 4rem;
     width: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top__btn {
+    bottom: 3%;
+    right: 2rem;
   }
 }
 
@@ -359,7 +366,7 @@ input, select, textarea {
   background-image: url("../img/about_icon_more_01.png");
   color: #FFF;
   content: '';
-  height: 5.7rem;
+  height: 4.2rem;
   position: absolute;
   right: -6.5rem;
   top: 30%;
@@ -383,6 +390,120 @@ input, select, textarea {
 }
 
 /* contact */
+.contact {
+  background-image: url(../img/footer_bg_01.png);
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+  height: 37.5rem;
+  margin-top: 17.5rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    height: 23rem;
+    margin-top: 9rem;
+  }
+}
+
+.contact__contents {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact__text {
+  font-size: 1.4rem;
+  letter-spacing: .2em;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__text {
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    line-height: 1.2rem;
+  }
+}
+
+.contact__btn__text {
+  align-items: center;
+  border: 1px solid #FFF;
+  border-radius: 3rem;
+  display: flex;
+  height: 9.6rem;
+  justify-content: center;
+  position: relative;
+  transition: .3s;
+  width: 51.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__btn__text {
+    border-radius: 1rem;
+    height: 5.5rem;
+    width: 32.5rem;
+  }
+}
+
+.contact__btn__text span {
+  color: #FFF;
+  letter-spacing: .1em;
+}
+
+.contact__btn__text span:nth-child(1) {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__btn__text span:nth-child(1) {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+
+.contact__btn__text span:nth-child(2) {
+  font-family: "\\6E38明朝体", YuMincho, "\\6E38明朝", "Yu Mincho", "\\30D2ラギノ明朝ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "\\30D2ラギノ明朝ProN", "Hiragino Mincho ProN", "\\30D2ラギノ明朝Pro", "Hiragino Mincho Pro", "HGS明朝 E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__btn__text span:nth-child(2) {
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+}
+
+.contact__btn__text .btn {
+  background-image: url("../img/about_menu_icon_01.png");
+  color: #FFF;
+  height: 4.2rem;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5.7rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__btn__text .btn {
+    background-size: cover;
+    height: 2.1rem;
+    width: 3rem;
+  }
+}
+
 /* mainvisual */
 .mainvisual {
   position: relative;
@@ -460,8 +581,10 @@ input, select, textarea {
 
 @media screen and (max-width: 767px) {
   .mainvisual__line {
-    bottom: -3rem;
-    margin-right: 6rem;
+    justify-content: flex-end;
+    margin-right: 8rem;
+    margin-top: 3rem;
+    position: static;
   }
 }
 
@@ -483,7 +606,7 @@ input, select, textarea {
 
 @media screen and (max-width: 767px) {
   .mainvisual__line--max {
-    margin-left: 6rem;
+    margin-left: 0rem;
   }
 }
 
@@ -509,15 +632,15 @@ input, select, textarea {
 }
 
 /* swiper */
-.swiper-container .swiper-slide, .slider1 .swiper-slide {
+.swiper-container.slider1 .swiper-slide {
   width: 100%;
 }
 
-.swiper-container .swiper-wrapper, .slider1 .swiper-wrapper {
+.swiper-container.slider1 .swiper-wrapper {
   z-index: 0 !important;
 }
 
-.swiper-container .swiper-slide__img, .slider1 .swiper-slide__img {
+.swiper-container.slider1 .swiper-slide__img {
   -o-object-fit: cover;
   border-bottom-right-radius: 3rem;
   border-top-right-radius: 3rem;
@@ -528,25 +651,27 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide__img, .slider1 .swiper-slide__img {
+  .swiper-container.slider1 .swiper-slide__img {
     height: 38.5rem;
     right: 7.7rem;
     width: calc(100vw - 77px);
   }
 }
 
-.swiper-container .swiper-pagination, .slider1 .swiper-pagination {
+.swiper-container.slider1 .swiper-pagination {
   display: flex;
   margin-left: 3rem;
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-pagination, .slider1 .swiper-pagination {
-    margin-left: 2rem;
+  .swiper-container.slider1 .swiper-pagination {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: static;
   }
 }
 
-.swiper-container .swiper-pagination-bullet, .slider1 .swiper-pagination-bullet {
+.swiper-container.slider1 .swiper-pagination-bullet {
   background: #937218 !important;
   cursor: none !important;
   display: inline-block !important;
@@ -556,17 +681,17 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-pagination-bullet, .slider1 .swiper-pagination-bullet {
+  .swiper-container.slider1 .swiper-pagination-bullet {
     width: 1rem !important;
   }
 }
 
-.swiper-container .swiper-pagination-bullet-active, .slider1 .swiper-pagination-bullet-active {
+.swiper-container.slider1 .swiper-pagination-bullet-active {
   background: #937218 !important;
   opacity: 1 !important;
 }
 
-.swiper-container .swiper-slide-content, .slider1 .swiper-slide-content {
+.swiper-container.slider1 .swiper-slide-content {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 1rem;
   letter-spacing: .2em;
@@ -576,7 +701,7 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide-content, .slider1 .swiper-slide-content {
+  .swiper-container.slider1 .swiper-slide-content {
     display: none;
   }
 }
@@ -724,9 +849,9 @@ input, select, textarea {
 
 .menu__content .btn {
   background-image: url("../img/about_menu_icon_01.png");
-  bottom: .4rem;
+  bottom: 1.8rem;
   color: #FFF;
-  height: 5.7rem;
+  height: 4.2rem;
   position: absolute;
   right: 3rem;
   width: 5.7rem;
@@ -781,28 +906,33 @@ input, select, textarea {
 }
 
 /* swiper2 */
-.swiper-container .swiper-slide, .slider2 .swiper-slide {
+.swiper-container.slider2 {
+  margin-top: 7.5rem;
+}
+
+.swiper-container.slider2 .swiper-slide {
   height: auto;
   margin-left: 3.5rem;
   max-width: 95.5rem;
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide, .slider2 .swiper-slide {
+  .swiper-container.slider2 .swiper-slide {
+    height: 100%;
     margin: auto;
     margin-left: 0;
     width: 100%;
   }
 }
 
-.swiper-container .swiper-slide .swiper-slide-img, .slider2 .swiper-slide .swiper-slide-img {
+.swiper-container.slider2 .swiper-slide .swiper-slide-img {
   border-radius: 3rem;
   height: 50rem;
   width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide .swiper-slide-img, .slider2 .swiper-slide .swiper-slide-img {
+  .swiper-container.slider2 .swiper-slide .swiper-slide-img {
     border-radius: 1rem;
     height: 18rem;
     max-width: 100%;
@@ -811,3 +941,82 @@ input, select, textarea {
 }
 
 /* shop */
+.shop__title {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 4.6rem;
+  font-weight: normal;
+  letter-spacing: .2em;
+  line-height: 4.6rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .shop__title {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin-top: 13rem;
+  }
+}
+
+.shop__title .title--line {
+  background: #937218;
+  display: block;
+  height: 0.1rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .shop__title .title--line {
+    margin-top: 1.5rem;
+  }
+}
+
+.shop__table {
+  color: #888888;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  line-height: 2.8rem;
+  margin: auto;
+  margin-top: 8rem;
+  max-width: 69rem;
+}
+
+@media screen and (max-width: 767px) {
+  .shop__table {
+    font-size: 1.2rem;
+    line-height: 2.9rem;
+    margin-top: 4rem;
+  }
+}
+
+.shop__table dl {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.shop__table dt {
+  margin-right: 4rem;
+  width: 18.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .shop__table dt {
+    margin-left: 3.2rem;
+    margin-right: 1rem;
+    min-width: 8.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shop__table dd {
+    width: 100%;
+  }
+}
+
+.shop__table dd a {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}

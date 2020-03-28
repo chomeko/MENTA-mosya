@@ -50,8 +50,12 @@
     letter-spacing: .2em
     font-family: $font_en
     +mq(sp)
-      bottom: - 3rem
-      margin-right: 6rem
+      position: static
+      justify-content: flex-end
+      margin-right: 8rem
+      margin-top: 3rem
+      //bottom: 0rem
+      //right: 6rem
     &--min
       font-size: 1.4rem
       margin-right: 2rem
@@ -61,7 +65,7 @@
       font-size: 1.4rem
       margin-left: 9rem
       +mq(sp)
-        margin-left: 6rem
+        margin-left: 0rem
   &__btn
     position: absolute
     content: ''
@@ -69,46 +73,49 @@
     right: 10rem
     +mvbtn
 /* swiper */
-.swiper-container,.slider1
-  .swiper-slide
-    width: 100%
-  .swiper-wrapper
-    z-index: 0 !important
-  .swiper-slide
-    &__img
-      object-fit: cover
-      right: 25rem
-      width: calc(100vw - 250px)
-      height: 59rem
-      border-top-right-radius: 3rem
-      border-bottom-right-radius: 3rem
+.swiper-container
+  &.slider1
+    .swiper-slide
+      width: 100%
+    .swiper-wrapper
+      z-index: 0 !important
+    .swiper-slide
+      &__img
+        object-fit: cover
+        right: 25rem
+        width: calc(100vw - 250px)
+        height: 59rem
+        border-top-right-radius: 3rem
+        border-bottom-right-radius: 3rem
+        +mq(sp)
+          height: 38.5rem
+          right: 7.7rem
+          width: calc(100vw - 77px)
+    .swiper-pagination
+      margin-left: 3rem
+      display: flex
       +mq(sp)
-        height: 38.5rem
-        right: 7.7rem
-        width: calc(100vw - 77px)
-  .swiper-pagination
-    margin-left: 3rem
-    display: flex
-    +mq(sp)
-      margin-left: 2rem
-  .swiper-pagination-bullet
-    width: 2rem !important
-    height: .1rem !important
-    display: inline-block !important
-    opacity: 0.2 !important
-    background: $font-color !important
-    cursor: none !important
-    +mq(sp)
-      width: 1rem !important
-  .swiper-pagination-bullet-active
-      opacity: 1 !important
+        margin-left: 1rem
+        margin-right: 1rem
+        position: static
+    .swiper-pagination-bullet
+      width: 2rem !important
+      height: .1rem !important
+      display: inline-block !important
+      opacity: 0.2 !important
       background: $font-color !important
-  .swiper-slide-content
-    margin-left: 15rem
-    margin-top: 3.5rem
-    font-size: 1rem
-    line-height: 1rem
-    letter-spacing: .2em
-    font-family: $font_en
-    +mq(sp)
-      display: none
+      cursor: none !important
+      +mq(sp)
+        width: 1rem !important
+    .swiper-pagination-bullet-active
+        opacity: 1 !important
+        background: $font-color !important
+    .swiper-slide-content
+      margin-left: 15rem
+      margin-top: 3.5rem
+      font-size: 1rem
+      line-height: 1rem
+      letter-spacing: .2em
+      font-family: $font_en
+      +mq(sp)
+        display: none

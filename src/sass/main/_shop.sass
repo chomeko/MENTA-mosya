@@ -1,1 +1,51 @@
 /* shop */
+.shop
+  &__container
+  &__title
+    font-family: $font_en
+    font-size: 4.6rem
+    line-height: 4.6rem
+    letter-spacing: .2em
+    margin-top: 10rem
+    text-align: center
+    font-weight: normal
+    +mq(sp)
+      font-size: 2.6rem
+      line-height: 2.6rem
+      margin-top: 13rem
+    .title--line
+      display: block
+      width: 2rem
+      height: 0.1rem
+      background: $font-color
+      margin: auto
+      margin-top: 2.5rem
+      +mq(sp)
+        margin-top: 1.5rem
+  &__table
+    max-width: 69rem
+    margin: auto
+    color: $gray
+    font-size: 1.4rem
+    line-height: 2.8rem
+    letter-spacing: 0.1em
+    margin-top: 8rem
+    +mq(sp)
+      margin-top: 4rem
+      font-size: 1.2rem
+      line-height: 2.9rem
+    dl
+      display: flex
+      margin-bottom: 2rem
+    dt
+      width: 18.5rem
+      margin-right: 4rem
+      +mq(sp)
+        min-width: 8.5rem
+        margin-left: 3.2rem
+        margin-right: 1rem
+    dd
+      +mq(sp)
+        width: 100%
+      a
+        text-decoration-line: underline
