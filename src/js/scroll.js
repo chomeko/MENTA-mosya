@@ -17,4 +17,15 @@ $(function () {
     $("html,body").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
+
+  $(function() {
+    var TopBtn = $('#PageTopBtn');
+    // ボタンを押下するとトップへ移動
+    TopBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+  });
 });
