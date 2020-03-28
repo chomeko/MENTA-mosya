@@ -542,6 +542,11 @@ input, select, textarea {
   }
 }
 
+.contact__btn__text:hover {
+  opacity: .6;
+  transition: .3s;
+}
+
 .contact__btn__text span {
   color: #FFF;
   letter-spacing: .1em;
