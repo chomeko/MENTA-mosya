@@ -18,12 +18,12 @@
         <div class="header__trigger"><span></span><span></span><span></span></div>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__list__item"><a href="#">HOME</a></li>
-            <li class="header__list__item"><a href="#">ABOUT</a></li>
-            <li class="header__list__item"><a href="#">SYSTEM</a></li>
-            <li class="header__list__item"><a href="#">MENU</a></li>
-            <li class="header__list__item"><a href="#">SHOP</a></li>
-            <li class="header__list__item"><a href="#">CONTACT</a></li><small>©tocotoco trimming salon</small>
+            <li class="header__list__item"><a href="/">HOME</a></li>
+            <li class="header__list__item"><a href="About">ABOUT</a></li>
+            <li class="header__list__item"><a href="System">SYSTEM</a></li>
+            <li class="header__list__item"><a href="Menu">MENU</a></li>
+            <li class="header__list__item"><a href="#Shop">SHOP</a></li>
+            <li class="header__list__item"><a href="#Contact">CONTACT</a></li><small>©tocotoco trimming salon</small>
           </ul>
         </nav>
         <h1 class="header__logo"></h1>
@@ -55,11 +55,12 @@
             <div class="mainvisual__line"><span class="mainvisual__line--min">1</span>
               <div class="swiper-pagination"></div><span class="mainvisual__line--max">3</span>
             </div>
-            <!--btn画像--><a class="mainvisual__btn" href="#"></a>
+            <!--btn画像-->
+            <div class="mainvisual__scroll" id="scroll"><a class="mainvisual__btn" href="#About"></a></div>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="About">
         <div class="about__container">
           <h2 class="about__title">ABOUT<span class="about__title--line"></span><span class="about__title--text">私たちの思い</span>
             <div class="about__side">CONTENT 01</div>
@@ -72,7 +73,7 @@
             <div class="btn">READ MORE</div></a>
         </div>
       </section>
-      <section class="menu">
+      <section class="menu" id="Menu">
         <div class="menu__container">
           <div class="menu__content"><img class="menu__content__img" src="/img/about_menu_img_01.png" alt="道具"/><a href="#">
               <div class="menu__content__box">
@@ -92,7 +93,7 @@
               <div class="btn"></div></a></div>
         </div>
       </section>
-      <section class="photo">
+      <section class="photo" id="Photo">
         <div class="photo__container">
           <h2 class="photo__title">PHOTO<span class="title--line"></span></h2>
           <!--カルーセル処理-->
@@ -110,7 +111,7 @@
           </div>
         </div>
       </section>
-      <section class="shop">
+      <section class="shop" id="Shop">
         <div class="shop__container">
           <h2 class="shop__title">SHOP<span class="title--line"></span></h2>
           <div class="shop__table">
@@ -141,7 +142,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="Contact">
         <div class="contact__contents">
           <p class="contact__text">ご予約の方は、下記電話番号からご連絡ください。</p><a class="contact__btn" href="tel:">
             <div class="contact__btn__text"><span>TEL</span><span>052 908 1777</span>
@@ -165,8 +166,10 @@
       </div>
     </footer>
   </body><!-- script置き場 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
   <script src="js/swiper.min.js"></script>
-  <script src="/js/trigger.min.js"></script>
+  <script src="js/trigger.min.js"></script>
+  <script src="js/scroll.min.js"></script>
 </html>

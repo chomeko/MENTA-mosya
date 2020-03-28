@@ -255,15 +255,16 @@ input, select, textarea {
     right: 0;
     top: 0;
     transition: all .5s;
+    visibility: hidden;
     width: 100%;
-    z-index: 10;
+    z-index: 5;
   }
 }
 
 @media screen and (max-width: 767px) {
   .header__nav.open {
     opacity: 1;
-    transition: 1s;
+    visibility: visible;
   }
 }
 
@@ -717,6 +718,12 @@ input, select, textarea {
     height: 3rem;
     right: 2rem;
     width: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainvisual__btn {
+    bottom: 4rem;
   }
 }
 

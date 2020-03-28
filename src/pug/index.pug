@@ -21,17 +21,17 @@ html(lang="ja")
         nav.header__nav
           ul.header__list
             li.header__list__item
-              a(href="#") HOME
+              a(href="/") HOME
             li.header__list__item
-              a(href="#") ABOUT
+              a(href="About") ABOUT
             li.header__list__item
-              a(href="#") SYSTEM
+              a(href="System") SYSTEM
             li.header__list__item
-              a(href="#") MENU
+              a(href="Menu") MENU
             li.header__list__item
-              a(href="#") SHOP
+              a(href="#Shop") SHOP
             li.header__list__item
-              a(href="#") CONTACT
+              a(href="#Contact") CONTACT
             small ©tocotoco trimming salon
         h1.header__logo
     main
@@ -62,9 +62,10 @@ html(lang="ja")
               .swiper-pagination
               span.mainvisual__line--max 3
             //btn画像
-            a(href="#").mainvisual__btn
+            .mainvisual__scroll#scroll
+              a(href="#About").mainvisual__btn
 
-      section.about
+      section.about#About
         .about__container
           h2.about__title ABOUT
             span.about__title--line
@@ -77,7 +78,7 @@ html(lang="ja")
           a(href="#")
             .btn READ MORE
 
-      section.menu
+      section.menu#Menu
         .menu__container
           .menu__content
             img(src="/img/about_menu_img_01.png", alt="道具").menu__content__img
@@ -101,7 +102,7 @@ html(lang="ja")
               .menu__content__side CONTENT 03
               .btn
 
-      section.photo
+      section.photo#Photo
         .photo__container
           h2.photo__title PHOTO
             span.title--line
@@ -122,7 +123,7 @@ html(lang="ja")
             .swiper-button-prev
             .swiper-button-next
 
-      section.shop
+      section.shop#Shop
         .shop__container
           h2.shop__title SHOP
             span.title--line
@@ -168,7 +169,7 @@ html(lang="ja")
                 br
                 | 取扱責任者：平岡愛
                 br
-      section.contact
+      section.contact#Contact
         .contact__contents
           p.contact__text ご予約の方は、下記電話番号からご連絡ください。
           a.contact__btn(href="tel:")
@@ -189,8 +190,10 @@ html(lang="ja")
             small ©tocotoco trimming salon
         a(href="").top__btn
   <!-- script置き場 -->
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
   script(src="https://code.jquery.com/jquery-2.2.3.min.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js")
   script(src="js/swiper.min.js")
-  script(src="/js/trigger.min.js")
+  script(src="js/trigger.min.js")
+  script(src="js/scroll.min.js")
 
