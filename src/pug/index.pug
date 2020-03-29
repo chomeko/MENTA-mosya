@@ -11,6 +11,7 @@ html(lang="ja")
     link(rel="stylesheet", href="css/style.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css")
     link(href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="css/animate.css")
   body
     header.header
       .header__container
@@ -36,7 +37,7 @@ html(lang="ja")
         a(href="/")
           h1.header__logo
     main
-      section.mainvisual
+      section.mainvisual.wow.fadeInUp
         .mainvisual__container
           .swiper-container.slider1
             .swiper-wrapper
@@ -66,7 +67,7 @@ html(lang="ja")
             .mainvisual__scroll#scroll
               a(href="#About").mainvisual__btn
 
-      section.about#About
+      section.about#About.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10")
         .about__container
           h2.about__title ABOUT
             span.about__title--line
@@ -79,7 +80,7 @@ html(lang="ja")
           a(href="#")
             .btn READ MORE
 
-      section.menu#Menu
+      section.menu#Menu.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10")
         .menu__container
           .menu__content
             img(src="/img/about_menu_img_01.png", alt="道具").menu__content__img
@@ -103,7 +104,7 @@ html(lang="ja")
               .menu__content__side CONTENT 03
               .btn
 
-      section.photo#Photo
+      section.photo#Photo.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10")
         .photo__container
           h2.photo__title PHOTO
             span.title--line
@@ -125,7 +126,7 @@ html(lang="ja")
               .swiper-button-prev
               .swiper-button-next
 
-      section.shop#Shop
+      section.shop#Shop.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10")
         .shop__container
           h2.shop__title SHOP
             span.title--line
@@ -198,4 +199,7 @@ html(lang="ja")
   script(src="js/swiper.min.js")
   script(src="js/trigger.min.js")
   script(src="js/scroll.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js")
+  script(src="js/wow.min.js")
+  script(src="js/wowinit.min.js")
 

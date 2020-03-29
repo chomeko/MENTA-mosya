@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css"/>
     <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/animate.css"/>
   </head>
   <body>
     <header class="header">
@@ -30,7 +31,7 @@
       </div>
     </header>
     <main>
-      <section class="mainvisual">
+      <section class="mainvisual wow fadeInUp">
         <div class="mainvisual__container">
           <div class="swiper-container slider1">
             <div class="swiper-wrapper">
@@ -60,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section class="about" id="About">
+      <section class="about wow fadeInUp" id="About" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10">
         <div class="about__container">
           <h2 class="about__title">ABOUT<span class="about__title--line"></span><span class="about__title--text">私たちの思い</span>
             <div class="about__side">CONTENT 01</div>
@@ -73,7 +74,7 @@
             <div class="btn">READ MORE</div></a>
         </div>
       </section>
-      <section class="menu" id="Menu">
+      <section class="menu wow fadeInUp" id="Menu" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10">
         <div class="menu__container">
           <div class="menu__content"><img class="menu__content__img" src="/img/about_menu_img_01.png" alt="道具"/><a href="#">
               <div class="menu__content__box">
@@ -93,7 +94,7 @@
               <div class="btn"></div></a></div>
         </div>
       </section>
-      <section class="photo" id="Photo">
+      <section class="photo wow fadeInUp" id="Photo" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10">
         <div class="photo__container">
           <h2 class="photo__title">PHOTO<span class="title--line"></span></h2>
           <!--カルーセル処理-->
@@ -113,7 +114,7 @@
           </div>
         </div>
       </section>
-      <section class="shop" id="Shop">
+      <section class="shop wow fadeInUp" id="Shop" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10">
         <div class="shop__container">
           <h2 class="shop__title">SHOP<span class="title--line"></span></h2>
           <div class="shop__table">
@@ -174,4 +175,7 @@
   <script src="js/swiper.min.js"></script>
   <script src="js/trigger.min.js"></script>
   <script src="js/scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/wowinit.min.js"></script>
 </html>
