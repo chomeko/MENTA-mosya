@@ -27,23 +27,59 @@
   margin-top: 7.5rem
   .swiper-wrapper
   .swiper-slide
-    max-width: 95.5rem
-    margin-left: 3.5rem
-    height: auto
+    overflow: hidden
+    max-width: 990px
     +mq(sp)
-      margin-left: 0
-      margin: auto
-      width: 100%
-      height: 100%
     .swiper-slide-img
       border-radius: 3rem
       width: 100%
-      height: 50rem
+      height: 100%
       +mq(sp)
         border-radius: 1rem
-        height: 18rem
-        width: 34rem
-        max-width: 100%
-  .swiper-pagintion
-  .swiper-button-prev
-  .swiper-button-next
+  .swiper-nav
+    max-width: 99rem
+    margin: auto
+    margin-top: 2rem
+    width: 100%
+    height: 5rem
+    position: relative
+    .swiper-pagination-bullet
+      width: 5.8rem !important
+      height: .1rem !important
+      margin-right: 1rem
+      display: inline-block !important
+      opacity: 0.2 !important
+      background: $font-color !important
+      cursor: none !important
+      +mq(sp)
+        width: 3rem !important
+        margin-right: .5rem
+    .swiper-pagination-bullet-active
+        opacity: 1 !important
+        background: $font-color !important
+    .swiper-button-prev
+      position: absolute
+      top: 1rem
+      left: 85%
+      margin-top: 0
+      background-image: url(../img/photo_slide_arrow_01.png)
+      background-size: contain
+      background-position: center
+      height: 1rem
+      width: 4rem
+      +mq(sp)
+        width: 3rem
+      +mq(sp2)
+        left: 77%
+    .swiper-button-next
+      background-image: url(../img/photo_slide_arrow_02.png)
+      background-size: contain
+      background-position: center
+      margin-top: 0
+      position: absolute
+      top: 1rem
+      width: 4rem
+      height: 1rem
+      right: 0
+      +mq(sp)
+        width: 3rem
